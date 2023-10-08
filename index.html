@@ -28,13 +28,13 @@
   <section class="secao card" id="card">
     <div class="secao-1-div">
 
-      <div onclick="openCadCpf" class="secao-2-div-card" id="cpf">
+      <div onclick="openCadCpf" class="secao-2-div-card" id="cardCpf">
         <img src="./asset/person.svg" alt="Pessoa Fisica">
         <h3>CPF</h3>
         <p> Pessoa Física </p>
       </div>
 
-      <div onclick="openCadCnpj" class="secao-2-div-card" id="cnpj">
+      <div onclick="openCadCnpj" class="secao-2-div-card" id="cardCnpj">
         <img src="./asset/company.svg" alt="Pessoa Juridica">
         <h3>CNPJ</h3>
         <p>Pessoa Jurídica</p>
@@ -59,6 +59,11 @@
         <input class="input__field" type="text" placeholder="Nome Fantasia" id="fantasy" name="fantasy"
           autocomplete="off" />
         <label class="input__label" htmlfor="fantasy">Nome Fantasia</label>
+      </div>
+      <div class="input__wrapper">
+        <input class="input__field" type="text" placeholder="CPF" id="cpf" name="cpf"
+          autocomplete="off" />
+        <label class="input__label" htmlfor="fantasy">CPF </label>
       </div>
 
 

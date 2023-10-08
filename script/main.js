@@ -18,7 +18,7 @@ const openCadCpf = () => {
   document.getElementById('cadcpf').classList.add('active')
   document.getElementById('back').classList.add('active')
 }
-document.getElementById('cpf')
+document.getElementById('cardCpf')
   .addEventListener('click', openCadCpf)
 
 const closeCadCpf = () => {
@@ -29,11 +29,11 @@ const openCadCnpj = () => {
   document.getElementById('cadcnpj').classList.add('active')
   document.getElementById('back').classList.add('active')
 }
-document.getElementById('cnpj')
+document.getElementById('cardCnpj')
   .addEventListener('click', openCadCnpj)
 
 const closeCadCnpj = () => {
-  document.getElementById('cnpj').classList.remove('active')
+  document.getElementById('cardCnpj').classList.remove('active')
 }
 
 
