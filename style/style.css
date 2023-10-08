@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding-top: 56px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  background: #FaFaFa;
+  transition: 0.3s;
+}
+
+nav img {
+  width: 100px;
+  height: 100px;
+  transform-origin: 0% 50%;
+  transition: 0.3s;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-1 {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secao {
+  margin: 0px;
+}
+
+.secao-1-div {
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.secao-2-div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+
+.secao-2-div-card img {
+  filter: invert(45%) sepia(46%) saturate(7148%) hue-rotate(128deg) brightness(91%) contrast(102%);
+}
+
+.secao-2-div-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.secao-2-div-card p {
+  font-size: 18px;
+
+}
+
+.secao-2-div-card img {
+  width: 45%;
+  height: auto;
+  padding-top: 5px;
+}
+
+.secao-2-div-card h3 {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.secao-2-div-card p {
+  padding-bottom: 5px;
+}
+
+.secao-2-div-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: #00993B;
+  color: #FFFFFF;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.secao-2-div-card:hover img {
+  filter: invert(86%) sepia(44%) saturate(2%) hue-rotate(321deg) brightness(110%) contrast(100%);
+}
+
+footer {
+  height: 5%;
+  background-color: #FaFaFa;
+}
+
+.back {
+  width: 5%;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+   opacity: 0;
+  z-index: -1;
+}
+
+.back:hover{
+  transform: scale(1.1);
+  background-color: #00993B;
+  color: #FFFFFF;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.back.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cadcpf, .cadcnpj {
+  opacity: 0;
+  z-index: -1;
+}
+
+.cadcpf.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fields__containe {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 95%;
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.input__field {
+  border: 1.5px solid #010111;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: #010111;
+  padding: 8px;
+  padding-right: 32px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown~.input__label {
+  font-size: 1rem;
+  cursor: text;
+  color: #010111;
+  top: 24px
+}
+
+label, .input__field:focus~.input__label {
+  position: absolute;
+  top: 6px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  left: 8px;
+  color: #00993B;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input__field:focus {
+  color: #010111;
+}
+
+.input__field:focus {
+  border: 1.5px solid #00993B;
+  outline: 1px solid #00993B;
+}
+
+label, .input__label {
+  color: #010111
+}
+
+
+
+/* Estilos para dispositivos móveis */
+/*@media (max-width: 768px) {
+  .secao-2-div-card {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    height: 15%;
+
+  }
+}*/

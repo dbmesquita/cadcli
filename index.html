@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cadastro</title>
+  <link rel="icon" href="./asset/icon.svg">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="nav-1 nav-flex">
+      <a href="www.fribel.com.br" title="www.fribel.com.br"">
+        <img src=" ./asset/logo-fribe.svg" alt="logo">
+      </a>
+      <div class="links">
+        <a href="">Pagina Inicial</a>
+        <a href="">Trabalhe Conosco</a>
+        <a href="">Sobre</a>
+        <a href="">Catálogo</a>
+      </div>
+    </div>
+  </nav>
+  <section class="secao card" id="card">
+    <div class="secao-1-div">
+
+      <div onclick="openCadCpf" class="secao-2-div-card" id="cpf">
+        <img src="./asset/person.svg" alt="Pessoa Fisica">
+        <h3>CPF</h3>
+        <p> Pessoa Física </p>
+      </div>
+
+      <div onclick="openCadCnpj" class="secao-2-div-card" id="cnpj">
+        <img src="./asset/company.svg" alt="Pessoa Juridica">
+        <h3>CNPJ</h3>
+        <p>Pessoa Jurídica</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="back" id="back">
+    voltar
+  </div>
+
+  <main class="cadcpf" id="cadcpf">
+    <div class="fields__containe">
+
+      <div class="input__wrapper">
+        <input class="input__field" type="text" placeholder="Nome Completo" id="reason" name="reason"
+          autocomplete="off" />
+        <label class="input__label" htmlfor="reason">Nome Completo</label>
+      </div>
+      <div class="input__wrapper">
+        <input class="input__field" type="text" placeholder="Nome Fantasia" id="fantasy" name="fantasy"
+          autocomplete="off" />
+        <label class="input__label" htmlfor="fantasy">Nome Fantasia</label>
+      </div>
+
+
+    </div>
+  </main>
+  <footer>
+    <div>
+      <div></div>
+    </div>
+  </footer>
+  <script src="./script/main.js"></script>
+</body>
+
+</html>
